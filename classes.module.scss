@@ -1,0 +1,14 @@
+@import '../../styleguide/variables.scss';
+.root {
+  @include mixNavigationAndMainMargin();
+  display: flex;
+  justify-content: space-between;
+  &__filters {
+    margin: 10px 0px;
+    width: 256px;
+  }
+  &__catalog {
+    width: calc(100% - 256px);
+    margin-left: 15px;
+  }
+}

@@ -1,0 +1,102 @@
+@import '../../styleguide/variables.scss';
+.root {
+  @include mixNavigationAndMainMargin();
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__box_title {
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__name {
+      span:nth-child(1) {
+        position: relative;
+        font-family: MullerLight;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0.02em;
+        color: #171111;
+        z-index: 1;
+      }
+      span:nth-child(2) {
+        font-family: MullerLight;
+        font-size: 16px;
+        letter-spacing: 0.02em;
+        color: #171111;
+        color: #aaaaaa;
+      }
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 108.08px;
+        height: 122.82px;
+        transform: translate(-45%, -75%);
+        background: url(../../styleguide/icons/filterPero.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        z-index: 0;
+      }
+    }
+    &__price {
+      background: #1b1e2b;
+      font-family: MullerRegular;
+      font-size: 15px;
+      color: #ffffff;
+      padding: 0px 10px;
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      margin-left: 60px;
+      margin-top: auto;
+      margin-bottom: auto;
+      span:nth-child(1) {
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+      }
+      button {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        &:focus {
+          outline: 0;
+        }
+      }
+    }
+  }
+  &__toggle_views {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.box_toggle_views_select {
+  margin-left: 45px;
+}
+.box_toggle_views_btn {
+  margin-left: 45px;
+  button {
+    border: none;
+    background: transparent;
+    &:focus {
+      outline: 0;
+    }
+  }
+}
+.active_svg {
+  rect {
+    fill: #009bde;
+  }
+}
+.unactive_svg {
+  rect {
+    fill: #1b1e2b;
+  }
+}

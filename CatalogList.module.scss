@@ -1,0 +1,24 @@
+.vertical {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 0px;
+}
+.vertical > .box {
+  width: calc(284px + 15px);
+  padding: 5px;
+}
+.horizontal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0px;
+}
+.horizontal > .box {
+  width: 100%;
+  padding: 5px;
+}
